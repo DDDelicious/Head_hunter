@@ -180,63 +180,63 @@
             <!-- 知识点频率标签 -->
             <div class="knowledge-frequency">
                 <div class="frequency-tag">
-                    英语时态 <span class="count">5</span>
+                    数据结构 <span class="count">5</span>
                 </div>
                 <div class="frequency-tag">
-                    一元二次方程 <span class="count">4</span>
+                    操作系统原理 <span class="count">4</span>
                 </div>
                 <div class="frequency-tag">
-                    牛顿运动定律 <span class="count">3</span>
+                    计算机网络 <span class="count">3</span>
                 </div>
                 <div class="frequency-tag">
-                    化学方程式配平 <span class="count">2</span>
+                    编程语言基础 <span class="count">2</span>
                 </div>
             </div>
 
             <!-- 选中的高频知识点详细讲解 -->
             <div class="knowledge-detail">
-                <h5 class="font-bold mb-2">▶ 英语时态（出现5次）</h5>
-                <p>英语时态是表示动作发生时间和状态的语法形式，常见类型包括：</p>
+                <h5 class="font-bold mb-2">▶ 数据结构（出现5次）</h5>
+                <p>数据结构是计算机存储、组织数据的方式，常见类型包括：</p>
                 <ul class="list-disc pl-6">
-                    <li>一般现在时：表示经常性、习惯性动作或客观事实（例：He plays football every week.）</li>
-                    <li>现在进行时：表示正在发生的动作（例：She is reading a book now.）</li>
-                    <li>现在完成时：表示过去发生并持续到现在的动作（例：I have lived here for 5 years.）</li>
-                    <li>一般过去时：表示过去某个时间发生的动作（例：They went to Beijing last year.）</li>
+                    <li>数组：是一种线性数据结构，它由相同类型的元素组成，可以通过索引快速访问元素。</li>
+                    <li>链表：也是一种线性数据结构，由节点组成，每个节点包含数据和指向下一个节点的指针。</li>
+                    <li>栈：是一种后进先出（LIFO）的数据结构，只能在栈顶进行插入和删除操作。</li>
+                    <li>队列：是一种先进先出（FIFO）的数据结构，只能在队尾插入元素，在队头删除元素。</li>
                 </ul>
-                <p class="font-bold mt-2">易错点：现在完成时与一般过去时的区别（关键看是否与现在有联系）。</p>
+                <p class="font-bold mt-2">易错点：栈和队列的操作特点容易混淆。</p>
             </div>
 
             <!-- 相关推荐题目 -->
             <div class="related-questions">
-                <h5 class="font-bold mb-2">▶ 推荐练习（英语时态相关题目）</h5>
+                <h5 class="font-bold mb-2">▶ 推荐练习（数据结构相关题目）</h5>
                 <div class="question-item">
-                    <p>1. We ______ (study) English for 3 years. （用正确时态填空）</p>
+                    <p>1. 以下哪种数据结构适合实现递归算法的调用栈？（ ）A. 数组 B. 链表 C. 栈 D. 队列</p>
                     <button class="answer-btn" onclick="toggleAnswer(this)">
                         <i class="fa fa-chevron-down answer-icon"></i> 查看答案
                     </button>
                     <div class="answer-container">
-                        <p class="text-correct font-medium mt-2">答案：have studied</p>
-                        <p class="text-sm text-gray-600">解析："for 3 years"表示持续到现在的动作，用现在完成时。</p>
+                        <p class="text-correct font-medium mt-2">答案：C</p>
+                        <p class="text-sm text-gray-600">解析：递归算法的调用过程符合后进先出的特点，栈是后进先出的数据结构，所以适合实现递归算法的调用栈。</p>
                     </div>
                 </div>
                 <div class="question-item">
-                    <p>2. By the time he came, we ______ (finish) the work. （用正确时态填空）</p>
+                    <p>2. 在一个循环队列中，队头指针 front 指向队头元素，队尾指针 rear 指向队尾元素的下一个位置。若队列的最大容量为 maxSize，则判断队列满的条件是（ ）A. (rear + 1) % maxSize == front B. rear == front C. (rear - 1) % maxSize == front D. rear + 1 == front</p>
                     <button class="answer-btn" onclick="toggleAnswer(this)">
                         <i class="fa fa-chevron-down answer-icon"></i> 查看答案
                     </button>
                     <div class="answer-container">
-                        <p class="text-correct font-medium mt-2">答案：had finished</p>
-                        <p class="text-sm text-gray-600">解析："by the time he came"表示过去的时间点，过去完成时表示在过去某个时间之前已经完成的动作。</p>
+                        <p class="text-correct font-medium mt-2">答案：A</p>
+                        <p class="text-sm text-gray-600">解析：在循环队列中，为了区分队列满和队列空的情况，通常采用 (rear + 1) % maxSize == front 来判断队列是否满。</p>
                     </div>
                 </div>
                 <div class="question-item">
-                    <p>3. Which sentence is correct? （选择题，选项略）</p>
+                    <p>3. 以下哪种数据结构的插入和删除操作的时间复杂度都是 O(1)？（ ）A. 数组 B. 链表 C. 栈 D. 以上都是</p>
                     <button class="answer-btn" onclick="toggleAnswer(this)">
                         <i class="fa fa-chevron-down answer-icon"></i> 查看答案
                     </button>
                     <div class="answer-container">
-                        <p class="text-correct font-medium mt-2">答案：C. Have you ever been to Paris?</p>
-                        <p class="text-sm text-gray-600">解析：现在完成时用于询问经历，"ever"表示"曾经"。</p>
+                        <p class="text-correct font-medium mt-2">答案：C</p>
+                        <p class="text-sm text-gray-600">解析：栈的插入和删除操作都只在栈顶进行，时间复杂度为 O(1)；数组的插入和删除操作可能需要移动元素，时间复杂度为 O(n)；链表的插入和删除操作需要遍历链表找到插入或删除的位置，时间复杂度为 O(n)。</p>
                     </div>
                 </div>
             </div>
@@ -259,14 +259,14 @@
                     <span class="item-date">2025-07-05 15:30</span>
                 </div>
                 <div>
-                    <span class="knowledge">一元二次方程</span>
-                    <span class="knowledge">求根公式</span>
+                    <span class="knowledge">数据结构</span>
+                    <span class="knowledge">栈</span>
                 </div>
-                <p class="question-text">1. 方程 x² - 6x + 8 = 0 的根是？</p>
+                <p class="question-text">1. 若一个栈的输入序列为 1, 2, 3, 4，以下哪个输出序列是不可能的？（ ）A. 4, 3, 2, 1 B. 3, 4, 2, 1 C. 4, 1, 2, 3 D. 2, 3, 4, 1</p>
                 <div class="answer-info">
-                    <p>你的答案：A. 1和8</p>
-                    <p>正确答案：C. 2和4</p>
-                    <p>解析：通过因式分解得(x-2)(x-4)=0，故根为2和4。</p>
+                    <p>你的答案：A</p>
+                    <p>正确答案：C</p>
+                    <p>解析：栈的特点是后进先出。对于选项 C，若要先输出 4，则 1, 2, 3 必须已经入栈，此时栈顶元素为 3，下一个输出只能是 3，而不是 1，所以该输出序列不可能。</p>
                 </div>
                 <button class="btn btn-sm btn-primary review-btn">再次练习</button>
             </div>
@@ -278,14 +278,14 @@
                     <span class="item-date">2025-07-03 09:15</span>
                 </div>
                 <div>
-                    <span class="knowledge">英语时态</span>
-                    <span class="knowledge">现在完成时</span>
+                    <span class="knowledge">操作系统原理</span>
+                    <span class="knowledge">进程调度</span>
                 </div>
-                <p class="question-text">2. She ______ in this city for 10 years.</p>
+                <p class="question-text">2. 以下哪种进程调度算法可以保证每个进程在一定时间内都能得到执行？（ ）A. 先来先服务（FCFS） B. 短作业优先（SJF） C. 时间片轮转（RR） D. 优先级调度</p>
                 <div class="answer-info">
-                    <p>你的答案：B. lived</p>
-                    <p>正确答案：A. has lived</p>
-                    <p>解析："for 10 years"表示持续到现在的动作，用现在完成时。</p>
+                    <p>你的答案：B</p>
+                    <p>正确答案：C</p>
+                    <p>解析：时间片轮转算法将 CPU 时间划分成固定大小的时间片，每个进程轮流执行一个时间片，这样可以保证每个进程在一定时间内都能得到执行。</p>
                 </div>
                 <button class="btn btn-sm btn-primary review-btn">再次练习</button>
             </div>
@@ -304,13 +304,13 @@
                     <span class="item-date">2025-07-06 16:40</span>
                 </div>
                 <div>
-                    <span class="knowledge">物理力学</span>
-                    <span class="knowledge">牛顿第二定律</span>
+                    <span class="knowledge">计算机网络</span>
+                    <span class="knowledge">TCP/IP 协议</span>
                 </div>
-                <p class="question-text">1. 质量为2kg的物体在5N的力作用下，加速度为多少？</p>
+                <p class="question-text">1. 在 TCP/IP 协议中，以下哪个协议属于传输层协议？（ ）A. IP B. TCP C. HTTP D. DNS</p>
                 <div class="answer-info">
-                    <p>正确答案：B. 2.5m/s²</p>
-                    <p>解析：根据F=ma，a=F/m=5N/2kg=2.5m/s²。</p>
+                    <p>正确答案：B</p>
+                    <p>解析：TCP（传输控制协议）是传输层协议，提供可靠的、面向连接的通信；IP 是网络层协议；HTTP 是应用层协议；DNS 是应用层协议，用于域名解析。</p>
                 </div>
                 <button class="btn btn-sm btn-secondary review-btn">取消收藏</button>
             </div>
@@ -322,13 +322,13 @@
                     <span class="item-date">2025-06-30 14:20</span>
                 </div>
                 <div>
-                    <span class="knowledge">化学方程式</span>
-                    <span class="knowledge">氧化还原反应</span>
+                    <span class="knowledge">编程语言基础</span>
+                    <span class="knowledge">Python 语法</span>
                 </div>
-                <p class="question-text">2. 下列反应中属于氧化还原反应的是？</p>
+                <p class="question-text">2. 在 Python 中，以下哪个语句可以用于异常处理？（ ）A. if-else B. for C. try-except D. while</p>
                 <div class="answer-info">
-                    <p>正确答案：C. 2H₂ + O₂ 点燃 2H₂O</p>
-                    <p>解析：反应中H和O的化合价发生变化，属于氧化还原反应。</p>
+                    <p>正确答案：C</p>
+                    <p>解析：在 Python 中，try-except 语句用于异常处理，当 try 块中的代码出现异常时，会跳转到 except 块中执行相应的处理代码。</p>
                 </div>
                 <button class="btn btn-sm btn-secondary review-btn">取消收藏</button>
             </div>
